@@ -14,13 +14,11 @@ A responsive web application developed using **HTML, CSS, and JavaScript** to ma
 
 ## 🎥 Demo Video
 
-> Upload your screen recording to GitHub or YouTube and replace the link below.
+"D:\SIH Project\Recording 2026-07-27 000254.zip"
+
 
 **Demo Video:** `demo.mp4`
 
-Or
-
-🎥 https://"C:\Users\Harish\Videos\Recording 2026-07-26 233719.mp4"
 
 
 ## ✨ Features
