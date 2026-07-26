@@ -1,0 +1,123 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Public Toilet Cleaning & Complaint Register</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🚻 Public Toilet Cleaning & Complaint Register</h1>
+
+    <!-- Search and Filter -->
+    <div class="top-controls">
+
+        <input
+            type="text"
+            id="search"
+            placeholder="Search by Block Name..."
+            onkeyup="searchRecords()">
+
+        <select id="statusFilter" onchange="filterRecords()">
+            <option value="All">All Status</option>
+            <option value="Clean">Clean</option>
+            <option value="Pending">Pending</option>
+            <option value="Urgent">Urgent</option>
+        </select>
+
+    </div>
+
+    <p class="count">
+        Total Records :
+        <span id="recordCount">0</span>
+    </p>
+
+    <!-- Records Table -->
+
+    <table id="recordTable">
+
+        <thead>
+
+        <tr>
+            <th>ID</th>
+            <th>Block</th>
+            <th>Location</th>
+            <th>Last Cleaned</th>
+            <th>Complaints</th>
+            <th>Status</th>
+            <th>Action</th>
+        </tr>
+
+        </thead>
+
+        <tbody id="tableBody">
+
+        </tbody>
+
+    </table>
+
+    <hr>
+
+    <h2>Add New Record</h2>
+
+    <form id="recordForm">
+
+        <div class="form-grid">
+
+            <input
+                type="number"
+                id="id"
+                placeholder="Record ID"
+                required>
+
+            <input
+                type="text"
+                id="block"
+                placeholder="Block Name"
+                required>
+
+            <input
+                type="text"
+                id="location"
+                placeholder="Location"
+                required>
+
+            <input
+                type="date"
+                id="cleanDate"
+                required>
+
+            <input
+                type="number"
+                id="complaints"
+                placeholder="Number of Complaints"
+                min="0"
+                required>
+
+            <select id="status">
+
+                <option value="Clean">Clean</option>
+                <option value="Pending">Pending</option>
+                <option value="Urgent">Urgent</option>
+
+            </select>
+
+        </div>
+
+        <button type="submit">
+            Add Record
+        </button>
+        
+
+    </form>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
